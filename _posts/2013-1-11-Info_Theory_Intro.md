@@ -20,6 +20,6 @@ How then does this relate to our weather example? There are 4 possible outcomes,
 
 As mentioned above, the amount of information required to communicate the outcome of a random variable is called the entropy. The entropy equivalently represents the expected surprisal from an observation of that random variable or the amount of uncertainty in the random variable. Formally, we can represent the entropy as:
 
-<p style="text-align: center;">$$H(X)=\sum_{x\in X}{P(x)log(P(x)})$$<\p>
+<p style="text-align: center;">$$H(X)=\sum_{x\in X}{P(x)log(P(x)})$$</p>
   
 If we break this down, it becomes incredibly simple. The part of the equation inside the sum is simply the probability of an outcome multiplied by the surprisal of that outcome. This gives us the expected amount of information from that outcome. I.e. the expected amount of information from an outcome is the probability of that outcome times the amount of information provided by that outcome. The sum simply allows us to get the expectation of this (which is already weighted by the probability term). Because high information outcomes are necessarily very rare, their contribution to the total entropy is not that high. If you play around with the entropy a bit, you’ll see that the highest entropy for a random variable with a given number of outcomes occurs when all of the outcomes are equiprobable. This is called the uniform distribution because the probabilities are uniform. 
